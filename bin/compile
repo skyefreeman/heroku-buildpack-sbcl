@@ -76,7 +76,7 @@ function compile_sources () {
         "${BUILD_DIR}/" "${CACHE_DIR}/" "${ENV_DIR}/" "${VIRTUAL_ROOT}/"
     # TODO: If not delete this file, when try to run the app, it will try to
     # find bundle-template.lisp in compile directory, not runtime directory.
-    #rm -fv ${VIRTUAL_ROOT}/quicklisp/quicklisp/bundle.fasl 2>&1 > /dev/null
+    rm -fv ${VIRTUAL_ROOT}/quicklisp/quicklisp/bundle.fasl 2>&1 > /dev/null
     #find ${VIRTUAL_ROOT}/quicklisp -type f -name "*.fasl" \
     #     -exec rm {} \; 2>&1 > /dev/null
     cd "${current_dir}"
